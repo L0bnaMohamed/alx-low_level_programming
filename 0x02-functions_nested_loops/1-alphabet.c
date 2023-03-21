@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * main - a function return the laower case alphabet
+ *print_alphabet - a function return the laower case alphabet
  *
  *Return:return 0 (success)
  */
