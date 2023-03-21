@@ -12,7 +12,7 @@ int main(void)
 
 	for (int i = 0; i < 8; i++)
 	{
-	_putchar(putch[i]);
+		_putchar(putch[i]);
 	}
 	_putchar('\n');
 	return (0);
