@@ -6,12 +6,12 @@
  */
 int main(void)
 {
-	unsigned long int number = 1024, sum_of_3_and_5;
+	unsigned long int sum_of_3_and_5;
 	int i;
 
-	for (i = 0; i < number; i++)
+	for (i = 0; i < 1024; i++)
 	{
-		if (number % 3 == 0 && number % 5 == 0)
+		if (i % 3 == 0 || i % 5 == 0)
 		{
 			sum_of_3_and_5 += i;
 		}
