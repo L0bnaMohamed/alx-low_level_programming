@@ -9,7 +9,7 @@ int main(void)
 	unsigned long int number = 1024, sum_of_3_and_5;
 	int i;
 
-	for (i = 0; i <= number; i++)
+	for (i = 0; i < number; i++)
 	{
 		if (number % 3 == 0 && number % 5 == 0)
 		{
