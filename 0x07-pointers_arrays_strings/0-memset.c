@@ -6,6 +6,7 @@
  * @s: is pointer
  * @b: is a character
  * @n: is an integer
+ * Return:return the pointer
  */
 char *_memset(char *s, char b, unsigned int n)
 {
