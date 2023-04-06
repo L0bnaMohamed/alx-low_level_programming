@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * _strlen_recursion(char *s) - is a function to return
+ * _strlen_recursion(char *s)- is a fuction return
  * the length of the string
  * @s: is a pointer
  * Return: return the length
