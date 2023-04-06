@@ -13,15 +13,13 @@
  */
 int _sqrt_recursion(int n)
 {
-	int squareRoot;
+	int sqrtt = 0;
 
-	squareRoot = sqrt(n);
-	if (squareRoot * squareRoot == n)
+	sqrtt = sqrt(n);
+	if (sqrtt * sqrtt == n)
 	{
-		return (squareRoot);
+		return (sqrtt);
 	}
 	else
-	{
 		return (-1);
-	}
 }
