@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 {
 	int number_of_argument;
 
-	for ( number_of_argument = 0; number_of_argument < argc; number_of_argument++)
+	for (number_of_argument = 0; number_of_argument < argc; number_of_argument++)
 	{
 		printf("%s\n", argv[number_of_argument]);
 	}
