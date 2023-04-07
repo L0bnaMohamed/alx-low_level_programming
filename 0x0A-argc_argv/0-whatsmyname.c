@@ -2,16 +2,15 @@
 
 /**
  * main - is the function
- *
+ * __attribute__((unused))-function used to ignore
+ * usage of the variable
  * @argc: is the string size
  *
  * @argv: is a string
  *  Return: return functin
  */
-int main(int argc, char *argv[])
+int main(__attribute__((unused)) int argc, char *argv[])
 {
-	argc = 0;
-
-	printf("%s\n", argv[argc]);
+	printf("%s\n", argv[0]);
 	return (1);
 }
