@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - function print the multiplication
@@ -20,18 +21,23 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
-	for (i = 2; i < argc; i++)
-	{
-	if (atoi(argv[i]) > 0)
-	{
-		sum += atoi(argv[i]);
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
-	}
+		for (i = 1; i < argc; i++)
+		{
+			char *argument = argv[i];
+			int counter = 0;
+
+			while (argument[counter] != '\0')
+			{
+				if (!isdigit(argument[counter]))
+				{
+				printf("Error\n");
+				return (1);
+				}
+				counter++;
+			}
+			sum += atoi(argument);
+			}
+			printf("%d\n", sum);
 	}
 	return (0);
 }
