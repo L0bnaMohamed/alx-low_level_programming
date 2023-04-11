@@ -16,12 +16,12 @@ char *_strcat(char *dest, char *src)
 
 	while (src[cou2] != '\0')
 	{
-		dest[cou2] = src[cou2];
+		dest[cou1] = src[cou2];
 		cou2++;
 		cou1++;
 	}
 
-	dest[cou2] = '\0';
+	dest[cou1] = '\0';
 
 	return (dest);
 }
