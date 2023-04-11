@@ -11,12 +11,10 @@ char *_strcat(char *dest, char *src)
 	int cou1 = 0;
 	int cou2 = 0;
 
-	if (dest[cou1] != '\0')
-	{
+	while (dest[cou1] != '\0')
 		cou1++;
-	}
 
-	else if (src[cou2] != '\0')
+	while (src[cou2] != '\0')
 	{
 		dest[cou2] = src[cou2];
 		cou2++;
