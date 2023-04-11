@@ -1,18 +1,19 @@
 #include "main.h"
 
 /**
- * abs - is a function
- * @n: is an integer
- * Return: return the value
+ * _abs- is a functin to print absulute
+ * @i: is an integer
+ * Return: Always (success)
  */
-int _abs(int n)
+int _abs(int i)
 {
-	if (n > 0)
+	if (i >= 0)
 	{
-		return (n);
+		return (i);
 	}
 	else
 	{
-		return (-n);
+		return (i * -1);
 	}
+
 }
