@@ -19,20 +19,14 @@ int main(void)
 			}
 			else if (i == 0 && j == 0)
 			{
-				printf("%d%d", i, j);
-				putchar(',');
-				putchar(' ');
 			}
-			else if (i == 0 && j > 0 && j < 9)
+			else if (i == j)
+			{
+			}
+			else if (i < j)
 			{
 				printf("%d%d", i, j);
 				putchar(',');
-				putchar(' ');
-			}
-			else
-			{
-				printf("%d%d", i, j);
-				printf(",");
 				putchar(' ');
 			}
 		}
