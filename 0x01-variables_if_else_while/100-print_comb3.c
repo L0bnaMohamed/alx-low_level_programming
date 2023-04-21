@@ -32,7 +32,7 @@ int main(void)
 			else
 			{
 				printf("%d%d", i, j);
-				putchar(',');
+				printf(",");
 				putchar(' ');
 			}
 		}
