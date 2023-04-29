@@ -13,28 +13,34 @@
  */
 int _sqrt_recursion(int n)
 {
-	int squar;
+	int low = 0, high = n / 2, mid;
 
-	if (n > 1000)
+	if (n < 0)
 	{
-		squar = n / 32;
-		return (squar);
+	return (-1);
 	}
-	else if (n == 16)
+	else if (n == 0 || n == 1)
 	{
-		squar = (16 / 4);
-		return (squar);
-	}
-
-	else if (n % 5 == 0)
-	{
-		squar = n / 5;
-		return (squar);
-	}
-	else if (n < 2)
-	{
-		return (n);
+	return (n);
 	}
 	else
+	{
+		while (low <= high)
+		{
+			mid = (low + high) / 2;
+			if (mid * mid == n)
+			{
+				return (mid);
+			}
+			else if (mid * mid < n)
+			{
+				low = mid + 1;
+			}
+			else
+			{
+				high = mid - 1;
+			}
+		}
 		return (-1);
+	}
 }
