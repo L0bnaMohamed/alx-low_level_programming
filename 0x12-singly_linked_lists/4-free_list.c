@@ -3,7 +3,7 @@
 
 /**
  * free_list-function
- * @list_t:is a pointer
+ * @head: A pointer to the head node of the list_t list.
  * Retun:return
  */
 void free_list(list_t *head)
