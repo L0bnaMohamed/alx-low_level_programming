@@ -4,9 +4,9 @@
 #define MAX_WORDS 100
 
 /**
- * strtow- is the function
+ * strtow - is the function
  * @str: is a char
- * Return : return
+ * Return: return
  */
 char **strtow(char *str)
 {
